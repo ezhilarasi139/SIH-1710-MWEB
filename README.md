@@ -1,156 +1,105 @@
+# Smart India Hackathon Workshop
+# Date: 26-10-2026
+## Register Number: 212224040088
+## Name: EZHILARASI N
+## Problem Title
+SIH 1710: Enhancing Navigation for Railway Station Facilities and Locations
+## Problem Description
+Background: Railway stations are complex environments with numerous facilities and locations such as ticket counters, platforms, restrooms, food courts, and waiting areas. Passengers often face difficulties in navigating these spaces, especially in large or unfamiliar stations. Efficient and user-friendly navigation systems are crucial for improving passenger experience, reducing congestion, and ensuring timely travel connections. Description: The problem involves developing a comprehensive navigation solution for railway stations that assists passengers in locating various facilities and destinations within the station premises. This includes creating detailed maps, providing real-time directions, and integrating features such as accessibility options for individuals with disabilities. The solution should be intuitive, easy to use, and accessible via multiple platforms, including mobile devices and digital kiosks. Key challenges include updating navigation information in real-time, ensuring accuracy, and accommodating the diverse needs of all passengers. Expected Solution: The expected solution is a multi-platform navigation system that provides detailed, real-time directions to all facilities and locations within a railway station. This system should include: A mobile application with 3D interactive maps and step-by-step navigation. Digital kiosks located throughout the station with touch-screen interfaces. Voice-guided navigation for visually impaired passengers. Regular updates to reflect changes in station layout and facility locations. Integration with existing railway apps and services for seamless user experience. The solution should enhance the overall passenger experience by reducing confusion, saving time, and improving accessibility within the station.
 
-# Ex01 Portfolio
-## Date: 26.10.26
+## Problem Creater's Organization
+Ministry of Railway
 
-## AIM
-To create a Portfolio using HTML and CSS.
+## Idea
+To develop a smart, web-based railway station navigation system that helps passengers easily find platforms, ticket counters, restrooms, food courts, waiting halls, and other facilities. The system will provide interactive station maps, step-by-step directions, voice guidance, and accessible routes for passengers with disabilities.
 
-## ALGORITHM
-### STEP 1
-Create an HTML file (index.html)
+## Proposed Solution / Architecture Diagram
 
-### STEP 2
-Create a CSS file (style.css)
+The proposed system is a responsive web application that passengers can access using their mobile phones, laptops, or digital kiosks inside railway stations.
 
-### STEP 3
-Include a navigation bar with links to different sections.
+Architecture Diagram:
 
-### STEP 4
-Add structured sections for introduction, about, projects, and contact details.
+       PASSENGERS / STATION STAFF
+                  |
+                  v
+       RESPONSIVE WEB APPLICATION
+          (HTML, CSS, JavaScript)
+                  |
+                  v
+          REACT.JS FRONTEND
+                  |
+                  v
+           REST API / BACKEND
+             (Node.js)
+                  |
+          +-------+-------+
+          |               |
+          v               v
+      DATABASE       NAVIGATION
+      (MongoDB)      AND ROUTING
+          |               |
+          +-------+-------+
+                  |
+                  v
+       STATION MAPS AND DIRECTIONS
+                  |
+                  v
+     MOBILE / LAPTOP / DIGITAL KIOSK
 
-### STEP 5
-Define global styles for fonts, colors, and layout.
 
-### STEP 6
-Style the header, navigation bar, and sections.
+Working: Passengers select their current location and destination. The system displays the route on an interactive map and provides step-by-step directions. Voice guidance and accessible routes help passengers reach their destinations easily. Station staff can update facility locations when changes occur.
 
-### STEP 7
-Use Flexbox or CSS Grid for layout design.
+## Use Cases
 
-### STEP 8
-Add hover effects and transitions for interactivity.
+Find Facilities: Passengers can locate platforms, ticket counters, restrooms, ATMs, food courts, and waiting halls.
 
-### STEP 9
-Add Images and Media.
+Interactive Navigation: Passengers can select a destination and view directions on a station map.
 
-### STEP 10
-Use optimized images for a professional look.
+Voice Guidance: Visually impaired passengers can listen to navigation instructions.
 
-### STEP 11
-Open the HTML file in a browser to check layout and functionality.
+Accessible Routes: The system can show suitable routes for wheelchair users and passengers with mobility difficulties.
 
-### STEP 12
-Fix styling issues and refine content placement.
+Digital Kiosk Support: Passengers can use a touchscreen kiosk to search for facilities and obtain directions.
 
-### STEP 13
-Deploy the Portfolio.
+Station Information Updates: Administrators can add, modify, or remove facility information.
 
-### STEP 14
-Upload to GitHub Pages for free hosting.
+Platform Navigation: Passengers can find the route to a particular platform and nearby facilities.
 
-## PROGRAM
-```
+## Technology Stack
+Frontend: HTML, CSS, JavaScript, React.js
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ezhilarasi - Portfolio</title>
-</head>
+Backend: Node.js and Express.js
 
-<body>
+Database: MongoDB
 
-    <header>
-        <h1>Ezhilarasi N</h1>
-        <p>212224040088</p>
-        <p>Third-Year Computer Science Engineering Student</p>
-        <hr>
-    </header>
+Maps: Leaflet.js with OpenStreetMap
 
-    <nav>
-        <a href="#about">About</a> |
-        <a href="#skills">Skills</a> |
-        <a href="#projects">Projects</a> |
-        <a href="#contact">Contact</a>
-    </nav>
+Voice Guidance: Web Speech API (text-to-speech)
 
-    <hr>
+Navigation: Graph-based pathfinding algorithm such as Dijkstra's algorithm or A*
 
-    <section id="about">
-        <h2>About Me</h2>
+Development Tools: Visual Studio Code, Git, and GitHub
 
-       <img src="21222404008.png" alt="My photo" width="150" height="105">
+Deployment: Vercel for the frontend and Render for the backend
 
-        <p>
-            Hello! I am Ezhilarasi, a third-year Computer Science
-            Engineering student. I am interested in software development
-            and web development. I enjoy learning new technologies
-            and creating useful projects.
-        </p>
-    </section>
+## Dependencies
 
-    <hr>
+Node.js and npm for running the backend and installing packages.
 
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>Java</li>
-            <li>Python</li>
-            <li>SQL</li>
-            <li>React.js</li>
-            <li>Django</li>
-        </ul>
+React.js for developing the interactive user interface.
 
-    </section>
+Express.js for creating backend APIs.
 
-    <hr>
+MongoDB and Mongoose for storing station and facility details.
 
-    <section id="projects">
-        <h2>My Projects</h2>
+Leaflet.js and OpenStreetMap for displaying interactive maps.
 
-        <h3>1. Shopkart - E-commerce Website</h3>
-        <p>
-            An e-commerce web application developed using Django.
-        </p>
+Web Speech API for voice-guided navigation, where supported by the browser.
 
-        <h3>2. Inventory Management System</h3>
-        <p>
-            A system to manage products, categories, suppliers,
-            purchases and sales.
-        </p>
-    </section>
+Internet connectivity for accessing online maps and deployed services.
 
-    <hr>
+Git and GitHub for source-code management and project collaboration.
 
-    <section id="contact">
-        <h2>Contact Me</h2>
+## Expected Outcome:
 
-        <p>Email: ezhilarasioffx@gmail.com</p>
-
-        <p>
-            GitHub:
-            <a href="https://github.com/ezhilarasi139">
-                Visit My GitHub
-            </a>
-        </p>
-    </section>
-
-    <hr>
-
-    <footer>
-        <p>&copy; 2026 Ezhilarasi N. All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
-
-```
-
-## OUTPUT
-
-<img width="496" height="395" alt="image" src="https://github.com/user-attachments/assets/f507fabe-70e0-49a5-ab5c-4ac28cc482be" />
-
-## RESULT
-The program for creating Portfolio using HTML and CSS is executed successfully.
+The proposed web application will help passengers find railway station facilities quickly, reduce confusion, and improve accessibility. It will provide a simple and user-friendly navigation experience across mobile devices, computers, and digital kiosks.
